@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <% include ../partials/head %>
+</head>
+<body>
+<style>
+    body {
+        margin:0px;
+        padding:0px;
+    }
+
+    .container {
+        text-align: center;
+        margin:0 auto;
+    }
+
+    .conteiner__img {
+        width: 44px;
+        height: 44px;
+    }
+</style>
+
+<div class="container">
+    <h1>Hello from master</h1>
+    <%if (idImg.length > 0) { %>
+        <h3>your img:</h3>
+        <img class="conteiner__img" src="/public/img/<%=idImg%>" alt="myImg">
+    <% } %>
+</div>
+
+</body>
+</html>
